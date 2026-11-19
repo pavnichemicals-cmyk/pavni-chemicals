@@ -1,0 +1,22 @@
+{
+  "name": "pavni_chemicals",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "genkit": "genkit start -- tsx watch src/index.ts"
+  },
+  "devDependencies": {
+    "vite": "^8.0.4"
+  },
+  "dependencies": {
+    "@genkit-ai/vertexai": "^1.33.0",
+    "dotenv": "^17.4.2",
+    "genkit": "^1.33.0",
+    "jsdom": "^29.0.2",
+    "zod": "^3.25.76"
+  }
+}

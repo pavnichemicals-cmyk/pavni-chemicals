@@ -1,0 +1,63 @@
+04:13:25 === PAVNI CHEMICALS MSDS DOWNLOAD STARTED ===
+04:13:25 Output folder: C:\Users\jayde\.gemini\antigravity\scratch\pavni_chemicals\docs\msds
+04:13:25 
+04:13:26 --- Grasim / Aditya Birla ---
+04:13:26 OK  [72 KB] Grasim_Caustic_Soda_Lye.pdf
+04:13:27 OK  [72 KB] Grasim_Caustic_Soda_Flakes.pdf
+04:13:27 OK  [72 KB] Grasim_Hydrochloric_Acid.pdf
+04:13:27 OK  [72 KB] Grasim_Methylene_Chloride.pdf
+04:13:27 OK  [72 KB] Grasim_Chloroform.pdf
+04:13:28 OK  [72 KB] Grasim_Benzyl_Chloride.pdf
+04:13:28 OK  [72 KB] Grasim_Benzyl_Alcohol.pdf
+04:13:28 OK  [72 KB] Grasim_Benzaldehyde.pdf
+04:13:28 OK  [72 KB] Grasim_Caustic_Potash_Lye.pdf
+04:13:29 OK  [72 KB] Grasim_Caustic_Potash_Flakes.pdf
+04:13:29 OK  [72 KB] Grasim_Potassium_Carbonate.pdf
+04:13:29 OK  [72 KB] Grasim_Hydrogen_Peroxide_50pct.pdf
+04:13:29 OK  [72 KB] Grasim_Aluminium_Chloride.pdf
+04:13:29 
+04:13:29 --- GACL ---
+04:13:31 ERR GACL_Caustic_Soda_Lye.pdf -- Exception calling "DownloadFile" with "2" argument(s): "The request was aborted: The connection was closed unexpectedly."
+04:13:32 ERR GACL_Caustic_Soda_Flakes.pdf -- Exception calling "DownloadFile" with "2" argument(s): "The request was aborted: The connection was closed unexpectedly."
+04:13:34 ERR GACL_Hydrochloric_Acid.pdf -- Exception calling "DownloadFile" with "2" argument(s): "The request was aborted: The connection was closed unexpectedly."
+04:13:35 ERR GACL_Liquid_Chlorine.pdf -- Exception calling "DownloadFile" with "2" argument(s): "The request was aborted: The connection was closed unexpectedly."
+04:13:36 ERR GACL_Sodium_Hypochlorite.pdf -- Exception calling "DownloadFile" with "2" argument(s): "The request was aborted: The connection was closed unexpectedly."
+04:13:37 ERR GACL_Hydrogen_Peroxide.pdf -- Exception calling "DownloadFile" with "2" argument(s): "The request was aborted: The connection was closed unexpectedly."
+04:13:39 ERR GACL_Poly_Aluminium_Chloride.pdf -- Exception calling "DownloadFile" with "2" argument(s): "The request was aborted: The connection was closed unexpectedly."
+04:13:39 
+04:13:39 --- GNFC ---
+04:13:40 ERR GNFC_Phosphoric_Acid_Technical.pdf -- Exception calling "DownloadFile" with "2" argument(s): "The remote server returned an error: (404) Not Found."
+04:13:41 ERR GNFC_Phosphoric_Acid_Food_Grade.pdf -- Exception calling "DownloadFile" with "2" argument(s): "The remote server returned an error: (404) Not Found."
+04:13:41 ERR GNFC_Hydrogen_Peroxide_35pct.pdf -- Exception calling "DownloadFile" with "2" argument(s): "The remote server returned an error: (404) Not Found."
+04:13:42 ERR GNFC_Hydrogen_Peroxide_50pct.pdf -- Exception calling "DownloadFile" with "2" argument(s): "The remote server returned an error: (404) Not Found."
+04:13:42 ERR GNFC_Toluene.pdf -- Exception calling "DownloadFile" with "2" argument(s): "The remote server returned an error: (404) Not Found."
+04:13:42 ERR GNFC_Acetic_Acid.pdf -- Exception calling "DownloadFile" with "2" argument(s): "The remote server returned an error: (404) Not Found."
+04:13:43 ERR GNFC_Formic_Acid.pdf -- Exception calling "DownloadFile" with "2" argument(s): "The remote server returned an error: (404) Not Found."
+04:13:43 ERR GNFC_Ethyl_Acetate.pdf -- Exception calling "DownloadFile" with "2" argument(s): "The remote server returned an error: (404) Not Found."
+04:13:43 
+04:13:43 --- DCW ---
+04:13:46 ERR DCW_Soda_Ash_Light.pdf -- Exception calling "DownloadFile" with "2" argument(s): "The request was aborted: The connection was closed unexpectedly."
+04:13:48 ERR DCW_Soda_Ash_Dense.pdf -- Exception calling "DownloadFile" with "2" argument(s): "The request was aborted: The connection was closed unexpectedly."
+04:13:50 ERR DCW_Sodium_Bicarbonate.pdf -- Exception calling "DownloadFile" with "2" argument(s): "The request was aborted: The connection was closed unexpectedly."
+04:13:51 ERR DCW_Sodium_Nitrite.pdf -- Exception calling "DownloadFile" with "2" argument(s): "The request was aborted: The connection was closed unexpectedly."
+04:13:53 ERR DCW_Sodium_Nitrate.pdf -- Exception calling "DownloadFile" with "2" argument(s): "The request was aborted: The connection was closed unexpectedly."
+04:13:53 
+04:13:53 --- GHCL ---
+04:13:58 ERR GHCL_Soda_Ash.pdf -- Exception calling "DownloadFile" with "2" argument(s): "The request was aborted: The connection was closed unexpectedly."
+04:14:00 ERR GHCL_Sodium_Bicarbonate.pdf -- Exception calling "DownloadFile" with "2" argument(s): "The request was aborted: The connection was closed unexpectedly."
+04:14:00 
+04:14:00 --- Deepak Nitrite ---
+04:14:25 ERR Deepak_Sodium_Nitrite.pdf -- Exception calling "DownloadFile" with "2" argument(s): "Unable to connect to the remote server"
+04:14:49 ERR Deepak_Sodium_Nitrate.pdf -- Exception calling "DownloadFile" with "2" argument(s): "Unable to connect to the remote server"
+04:14:49 
+04:14:49 === DONE ===
+04:14:49 Downloaded : 13 files
+04:14:49 Failed     : 24 files
+04:14:49 Folder     : C:\Users\jayde\.gemini\antigravity\scratch\pavni_chemicals\docs\msds
+04:14:49 
+04:14:49 For failed files, download manually from:
+04:14:49   Grasim : https://www.adityabirlachemicals.com/resource-center/sds
+04:14:49   GACL   : https://www.gacl.com/msds.aspx
+04:14:49   GNFC   : https://www.gnfc.in/products.aspx
+04:14:49   DCW    : https://www.dcwltd.com/technical-information
+04:14:49   GHCL   : https://www.ghcl.co.in/chemical-products

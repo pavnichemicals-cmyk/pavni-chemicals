@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" type="image/svg+xml" href="images/favicon.svg" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Caustic Soda Lye | Pavni Chemicals — Authorized Dealer Grasim Industries & Epigral Limited</title>
+    <meta name="description" content="Caustic Soda Lye (NaOH) supplied by Pavni Chemicals, Authorized Dealer of Aditya Birla Grasim Industries & Epigral Limited. Full specifications, applications, and MSDS available.">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/typography.css">
+    <link rel="stylesheet" href="css/theme.css">
+    <style>
+        /* ---- Product Detail Specific Styles ---- */
+        .product-hero {
+            padding: 160px 0 80px;
+            background: linear-gradient(160deg, rgba(5,20,40,0.97) 0%, rgba(8,32,64,0.9) 60%, rgba(0,212,180,0.07) 100%),
+                        url('/images/ind_water.png') center/cover no-repeat;
+            border-bottom: 1px solid var(--navy-border);
+        }
+        .breadcrumb {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 0.82rem;
+            color: var(--text-muted);
+            margin-bottom: 1.5rem;
+        }
+        
+        
+        .product-hero-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: start;
+        }
+        .product-hero-title {
+            font-size: clamp(2rem, 4vw, 3rem);
+            font-weight: 800;
+            line-height: 1.15;
+            margin-bottom: 1rem;
+        }
+        .product-hero-desc {
+            font-size: 1.1rem;
+            color: var(--text-light);
+            line-height: 1.75;
+            margin-bottom: 2rem;
+        }
+        .product-meta-chips {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin-bottom: 2rem;
+        }
+        .meta-chip {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.35rem;
+            padding: 0.35rem 0.85rem;
+            border-radius: var(--radius-pill);
+            font-size: 0.78rem;
+            font-weight: 700;
+            letter-spacing: 0.04em;
+            text-transform: uppercase;
+        }
+        .chip-teal { background: var(--teal-glow); color: var(--teal); border: 1px solid rgba(0,212,180,0.3); }
+        .chip-blue { background: var(--blue-light); color: #6ab0ff; border: 1px solid rgba(26,111,255,0.3); }
+        .chip-orange { background: rgba(255,107,43,0.12); color: #ff9a6c; border: 1px solid rgba(255,107,43,0.3); }
+
+        /* Spec Table */
+        .spec-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 1.5rem;
+        }
+        .spec-table tr {
+            border-bottom: 1px solid var(--navy-border);
+            transition: background 0.2s;
+        }
+        .spec-table tr:hover { background: rgba(0,212,180,0.04); }
+        .spec-table td {
+            padding: 0.9rem 1rem;
+            font-size: 0.92rem;
+        }
+        .spec-table td:first-child {
+            color: var(--text-muted);
+            font-weight: 600;
+            width: 42%;
+        }
+        .spec-table td:last-child {
+            color: var(--white);
+            font-weight: 500;
+        }
+
+        /* Application pills */
+        .app-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            margin-top: 1.5rem;
+        }
+        .app-card {
+            background: var(--navy-card);
+            border: 1px solid var(--navy-border);
+            border-radius: var(--radius-md);
+            padding: 1.25rem;
+            display: flex;
+            align-items: flex-start;
+            gap: 0.75rem;
+            transition: var(--trans);
+        }
+        .app-card:hover {
+            border-color: rgba(0,212,180,0.4);
+            transform: translateY(-3px);
+        }
+        .app-icon { font-size: 1.5rem; flex-shrink: 0; margin-top: 2px; }
+        .app-title { font-size: 0.9rem; font-weight: 700; color: var(--white); margin-bottom: 0.2rem; }
+        .app-desc  { font-size: 0.78rem; color: var(--text-muted); line-height: 1.5; }
+
+        /* MSDS Download */
+        .msds-card {
+            background: linear-gradient(135deg, rgba(0,212,180,0.08), rgba(26,111,255,0.08));
+            border: 1px solid var(--teal);
+            border-radius: var(--radius-md);
+            padding: 2rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+        }
+        .msds-icon { font-size: 2.5rem; }
+        .msds-info h4 { font-size: 1rem; font-weight: 700; color: var(--white); margin-bottom: 0.35rem; }
+        .msds-info p  { font-size: 0.85rem; color: var(--text-muted); }
+
+        /* Product Nav (sidebar) */
+        .product-sidebar {
+            position: sticky;
+            top: 100px;
+        }
+        .sidebar-card {
+            background: var(--navy-card);
+            border: 1px solid var(--navy-border);
+            border-radius: var(--radius-md);
+            padding: 1.75rem;
+            margin-bottom: 1.25rem;
+        }
+        .sidebar-title {
+            font-size: 0.78rem;
+            font-weight: 700;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            color: var(--teal);
+            margin-bottom: 1.25rem;
+        }
+        .related-product-link {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            padding: 0.75rem 0;
+            border-bottom: 1px solid var(--navy-border);
+            color: var(--text-light);
+            font-size: 0.875rem;
+            font-weight: 500;
+            transition: color var(--trans);
+        }
+        .related-product-link:last-child { border-bottom: none; }
+        .related-product-link:hover { color: var(--teal); }
+        .related-dot { width: 6px; height: 6px; border-radius: 50%; background: var(--teal); flex-shrink: 0; }
+
+        @media (max-width: 900px) {
+            .product-hero-grid { grid-template-columns: 1fr; }
+            .product-detail-grid { grid-template-columns: 1fr !important; }
+        }
+    </style>
+</head>
+<body class="bg-dark">
+
+    <header id="site-header" class="scrolled">
+      <div class="container">
+        <div class="header-inner">
+          <a href="index.html" class="logo-link"><img src="images/header-logo.svg" alt="Pavni Chemicals Logo" class="site-logo" /></a>
+          <nav class="main-nav">
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="about.html" class="nav-link">About Us</a>
+            <a href="products.html" class="nav-link active">Products</a>
+            <a href="industries.html" class="nav-link">Industries</a>
+            <a href="contact.html" class="nav-link">Contact</a>
+          </nav>
+          <div class="header-ctas">
+            <a href="tel:+919687370005" class="btn btn-outline hide-mobile">📞 +91 96873 70005</a>
+            <a href="contact.html#quote" class="btn btn-primary">Get a Quote</a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+        <!-- Product Hero -->
+        <div class="product-hero">
+            <div class="container">
+                <div class="breadcrumb">
+                    <a href="index.html">Home</a> <span>/</span> 
+                    <a href="products.html">Products</a> <span>/</span> 
+                    <span class="current">Caustic Soda Lye</span>
+                </div>
+
+                <div class="product-hero-grid">
+                    <div>
+                        <div class="product-meta-chips">
+                            <span class="meta-chip chip-teal">🏅 Authorized Dealer — Grasim Industries & Epigral Limited</span>
+                            <span class="meta-chip chip-blue">MSDS Available</span>
+                            <span class="meta-chip chip-orange">In Stock</span>
+                        </div>
+                        <h1 class="product-hero-title">Caustic Soda <span class="text-teal">Lye</span></h1>
+                        <p class="product-hero-desc">Sodium Hydroxide (NaOH) in liquid form — a fundamental industrial chemical used across textile, paper, soap, water treatment and chemical manufacturing industries. Supplied directly from Grasim Industries with guaranteed purity.</p>
+                        <div style="display:flex;gap:1rem;flex-wrap:wrap;">
+                            <a href="contact.html#quote" class="btn btn-cta">Request a Quote</a>
+                            <a href="https://wa.me/919687370005?text=Hello%2C%20I%20need%20a%20quote%20for%20Caustic%20Soda%20Lye" target="_blank" class="btn btn-whatsapp" rel="noopener">💬 WhatsApp Quote</a>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="images/ind_water.png" alt="Caustic Soda Lye" style="width:100%;border-radius:var(--radius-lg);border:1px solid var(--navy-border);" />
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Detail Content -->
+        <section class="section">
+            <div class="container">
+                <div class="product-detail-grid" style="display:grid;grid-template-columns:1fr 340px;gap:3rem;align-items:start;">
+
+                    <!-- Main Content -->
+                    <div>
+                        <!-- Specifications -->
+                        <div class="sidebar-card mb-lg" style="background:var(--navy-card);">
+                            <h2 class="sidebar-title">📋 Product Specifications</h2>
+                            <table class="spec-table">
+                                <tbody>
+                                    <tr><td>Chemical Name</td><td>Sodium Hydroxide</td></tr>
+                                    <tr><td>Chemical Formula</td><td>NaOH</td></tr>
+                                    <tr><td>CAS Number</td><td>1310-73-2</td></tr>
+                                    <tr><td>Form</td><td>Liquid (Lye)</td></tr>
+                                    <tr><td>Concentration</td><td>48–50% (w/w)</td></tr>
+                                    <tr><td>Appearance</td><td>Clear, colourless to slightly yellowish liquid</td></tr>
+                                    <tr><td>Specific Gravity</td><td>1.50–1.52 g/cm³ at 20°C</td></tr>
+                                    <tr><td>pH (1% solution)</td><td>&gt;14</td></tr>
+                                    <tr><td>Purity</td><td>≥ 98.5%</td></tr>
+                                    <tr><td>Packaging</td><td>Bulk tankers, 200L HDPE drums, 35L carboys</td></tr>
+                                    <tr><td>Storage Temp</td><td>Above 12°C (to prevent crystallization)</td></tr>
+                                    <tr><td>Hazard Class</td><td>Class 8 — Corrosive</td></tr>
+                                    <tr><td>Supplier / Source</td><td>Grasim Industries Ltd. (Aditya Birla Group)</td></tr>
+                                    <tr><td>Origin</td><td>India (Domestic)</td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <!-- Applications -->
+                        <div class="sidebar-card mb-lg">
+                            <h2 class="sidebar-title">⚙️ Applications &amp; Industries</h2>
+                            <div class="app-grid">
+                                <div class="app-card">
+                                    <span class="app-icon">🧵</span>
+                                    <div>
+                                        <div class="app-title">Textile Industry</div>
+                                        <div class="app-desc">Mercerising of cotton, scouring, dyeing and sizing processes</div>
+                                    </div>
+                                </div>
+                                <div class="app-card">
+                                    <span class="app-icon">📄</span>
+                                    <div>
+                                        <div class="app-title">Paper &amp; Pulp</div>
+                                        <div class="app-desc">Kraft process pulping and bleaching of wood pulp for paper manufacturing</div>
+                                    </div>
+                                </div>
+                                <div class="app-card">
+                                    <span class="app-icon">🧼</span>
+                                    <div>
+                                        <div class="app-title">Soaps &amp; Detergents</div>
+                                        <div class="app-desc">Saponification of fats and oils in soap and liquid detergent manufacturing</div>
+                                    </div>
+                                </div>
+                                <div class="app-card">
+                                    <span class="app-icon">💧</span>
+                                    <div>
+                                        <div class="app-title">Water Treatment</div>
+                                        <div class="app-desc">pH adjustment and neutralization in effluent treatment plants (ETP)</div>
+                                    </div>
+                                </div>
+                                <div class="app-card">
+                                    <span class="app-icon">⚗️</span>
+                                    <div>
+                                        <div class="app-title">Chemical Manufacturing</div>
+                                        <div class="app-desc">Feedstock for sodium silicate, sodium phosphate and other sodium compounds</div>
+                                    </div>
+                                </div>
+                                <div class="app-card">
+                                    <span class="app-icon">🏭</span>
+                                    <div>
+                                        <div class="app-title">Aluminium Processing</div>
+                                        <div class="app-desc">Bauxite digestion in Bayer process for aluminium extraction</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- MSDS Download -->
+                        <div class="msds-card mb-lg">
+                            <div style="display:flex;align-items:center;gap:1.25rem;">
+                                <span class="msds-icon">📥</span>
+                                <div class="msds-info">
+                                    <h4>Material Safety Data Sheet (MSDS)</h4>
+                                    <p>SDS / MSDS compliant with GHS / OSHA standards — includes hazard classification, first aid, handling &amp; storage, PPE requirements and disposal guidelines.</p>
+                                </div>
+                            </div>
+                            <a href="docs/msds/MSDS-Caustic-Soda-Lye.pdf" target="_blank" download class="btn btn-primary" rel="noopener" style="white-space:nowrap;">📄 Download MSDS</a>
+                        </div>
+
+                        <!-- Handling, Storage & Safety -->
+                        <div class="sidebar-card">
+                            <h2 class="sidebar-title">⚠️ Handling, Storage &amp; Safety</h2>
+                            <div class="grid grid-2 gap-md" style="margin-top:0.5rem;">
+                                <div>
+                                    <h4 style="color:var(--white);font-size:0.9rem;margin-bottom:0.75rem;">🛡️ PPE Required</h4>
+                                    <ul style="color:var(--text-muted);font-size:0.85rem;display:flex;flex-direction:column;gap:0.4rem;padding-left:1rem;list-style:disc;">
+                                        <li>Chemical-resistant gloves (neoprene/nitrile)</li>
+                                        <li>Safety goggles / face shield</li>
+                                        <li>Acid/alkali resistant apron</li>
+                                        <li>Chemical-resistant boots</li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <h4 style="color:var(--white);font-size:0.9rem;margin-bottom:0.75rem;">🏪 Storage Guidelines</h4>
+                                    <ul style="color:var(--text-muted);font-size:0.85rem;display:flex;flex-direction:column;gap:0.4rem;padding-left:1rem;list-style:disc;">
+                                        <li>Store above 12°C to prevent solidification</li>
+                                        <li>Use HDPE or SS 316L containers only</li>
+                                        <li>Keep away from acids and moisture</li>
+                                        <li>Ensure adequate ventilation</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Sidebar -->
+                    <div class="product-sidebar">
+
+                        <!-- Quick Contact -->
+                        <div class="sidebar-card" style="background:linear-gradient(135deg,var(--navy-card),rgba(0,212,180,0.06));border-color:rgba(0,212,180,0.3);">
+                            <p class="sidebar-title">🚀 Get a Quote</p>
+                            <p style="color:var(--text-muted);font-size:0.85rem;margin-bottom:1.25rem;">Ready to order or need pricing? Our team responds within 15 minutes.</p>
+                            <div style="display:flex;flex-direction:column;gap:0.75rem;">
+                                <a href="contact.html#quote" class="btn btn-cta w-full">Request a Quote</a>
+                                <a href="https://wa.me/919687370005?text=Hello%2C%20I%20need%20a%20quote%20for%20Caustic%20Soda%20Lye" target="_blank" class="btn btn-whatsapp w-full" rel="noopener">💬 WhatsApp Now</a>
+                                <a href="https://share.google/441LCmXgFTfB7Tywc" target="_blank" class="btn btn-outline w-full" style="background: white; color: #4285F4; border-color: #4285F4; justify-content: center; gap: 8px;">
+                                    <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg>
+                                    Google Business
+                                </a>
+                                <a href="https://www.indiamart.com/suraj-entp-vadodara/" target="_blank" class="btn btn-outline w-full" style="background: #581615; color: white; border-color: #581615; justify-content: center; gap: 8px;">
+                                    <img src="images/indiamart-logo.svg" alt="IndiaMart" width="16" height="16" style="filter: brightness(0) invert(1);">
+                                    IndiaMart Profile
+                                </a>
+                                <a href="tel:+919687370005" class="btn btn-secondary w-full">📞 Call Sales Desk</a>
+                            </div>
+                        </div>
+
+                        <!-- Key Facts -->
+                        <div class="sidebar-card">
+                            <p class="sidebar-title">📊 Key Facts</p>
+                            <div style="display:flex;flex-direction:column;gap:0.75rem;">
+                                <div style="display:flex;justify-content:space-between;align-items:center;padding:0.6rem 0;border-bottom:1px solid var(--navy-border);">
+                                    <span style="color:var(--text-muted);font-size:0.85rem;">Min. Order</span>
+                                    <span style="color:var(--white);font-weight:700;font-size:0.9rem;">1 MT</span>
+                                </div>
+                                <div style="display:flex;justify-content:space-between;align-items:center;padding:0.6rem 0;border-bottom:1px solid var(--navy-border);">
+                                    <span style="color:var(--text-muted);font-size:0.85rem;">Delivery</span>
+                                    <span style="color:var(--white);font-weight:700;font-size:0.9rem;">24–48 hrs</span>
+                                </div>
+                                <div style="display:flex;justify-content:space-between;align-items:center;padding:0.6rem 0;border-bottom:1px solid var(--navy-border);">
+                                    <span style="color:var(--text-muted);font-size:0.85rem;">Coverage</span>
+                                    <span style="color:var(--white);font-weight:700;font-size:0.9rem;">All Gujarat</span>
+                                </div>
+                                <div style="display:flex;justify-content:space-between;align-items:center;padding:0.6rem 0;">
+                                    <span style="color:var(--text-muted);font-size:0.85rem;">Own Transport</span>
+                                    <span style="color:var(--teal);font-weight:700;font-size:0.9rem;">✓ Yes</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Related Products -->
+                        <div class="sidebar-card">
+                            <p class="sidebar-title">🔗 Related Products</p>
+                            <a href="product-detail-caustic-flakes.html" class="related-product-link">
+                                <span class="related-dot"></span> Caustic Soda Flakes
+                            </a>
+                            <a href="product-detail-hcl.html" class="related-product-link">
+                                <span class="related-dot"></span> Hydrochloric Acid
+                            </a>
+                            <a href="product-detail-soda-ash.html" class="related-product-link">
+                                <span class="related-dot"></span> Sodium Hypochlorite
+                            </a>
+                            <a href="product-detail-h2o2.html" class="related-product-link">
+                                <span class="related-dot"></span> Hydrogen Peroxide 50%
+                            </a>
+                            <a href="products.html" class="related-product-link" style="color:var(--teal);margin-top:0.5rem;">
+                                View All Products →
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Floating CTAs -->
+    <div class="floating-ctas">
+        <div class="float-btn-wrap">
+            <span class="float-tooltip">WhatsApp</span>
+            <a href="https://wa.me/919687370005" target="_blank" class="float-btn float-wa float-btn-link" rel="noopener">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.125.558 4.122 1.535 5.856L.057 23.492a.5.5 0 0 0 .6.637l5.807-1.524A11.94 11.94 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.943 0-3.764-.527-5.321-1.443l-.38-.224-3.923 1.029 1.046-3.818-.247-.396A9.955 9.955 0 0 1 2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
+            </a>
+        </div>
+        <div class="float-btn-wrap">
+            <span class="float-tooltip">Call Now</span>
+            <a href="tel:+919687370005" class="float-btn float-call float-btn-link">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+            </a>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

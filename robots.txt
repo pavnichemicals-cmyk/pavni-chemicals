@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://pavnichemicals.com/sitemap.xml

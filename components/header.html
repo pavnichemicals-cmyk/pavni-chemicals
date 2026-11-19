@@ -1,0 +1,50 @@
+<!-- SHARED HEADER COMPONENT — include in every page -->
+<header id="site-header">
+  <div class="container">
+    <div class="header-inner">
+
+      <!-- Logo -->
+      <a href="index.html" class="logo-link" aria-label="Pavni Chemicals Home">
+        <img src="images/logo-01.png" alt="Pavni Chemicals Logo" class="site-logo" />
+      </a>
+
+      <!-- Desktop Nav -->
+      <nav class="main-nav" aria-label="Main navigation">
+        <a href="index.html"       class="nav-link" data-section="home">Home</a>
+        <a href="about.html"       class="nav-link" data-section="about">About Us</a>
+        <a href="products.html"    class="nav-link" data-section="products">Products</a>
+        <a href="industries.html"  class="nav-link" data-section="industries">Industries</a>
+        <a href="contact.html"     class="nav-link" data-section="contact">Contact</a>
+      </nav>
+
+      <!-- Header CTAs -->
+      <div class="header-ctas">
+        <a href="tel:+919687370005" class="btn btn-outline hide-mobile" id="header-call-btn">
+          📞 +91 96873 70005
+        </a>
+        <a href="contact.html#quote" class="btn btn-primary" id="header-quote-btn">
+          Get a Quote
+        </a>
+      </div>
+
+      <!-- Hamburger -->
+      <button class="hamburger" id="hamburger" aria-label="Open mobile navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- Mobile Nav Overlay -->
+<nav class="mobile-nav" id="mobile-nav" aria-label="Mobile navigation">
+  <button class="mobile-nav-close" id="mobile-close" aria-label="Close menu">&times;</button>
+  <a href="index.html"      class="nav-link">Home</a>
+  <a href="about.html"      class="nav-link">About Us</a>
+  <a href="products.html"   class="nav-link">Products</a>
+  <a href="industries.html" class="nav-link">Industries</a>
+  <a href="contact.html"    class="nav-link">Contact</a>
+  <a href="tel:+919687370005" class="btn btn-outline mt-md">📞 Call Now</a>
+  <a href="contact.html#quote" class="btn btn-primary">Get a Quote</a>
+</nav>
