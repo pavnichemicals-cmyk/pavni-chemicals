@@ -2307,6 +2307,15 @@ textarea,
   }
 }
 
+.mx-auto {
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+.my-auto {
+  margin-top: auto !important;
+  margin-bottom: auto !important;
+}
+
 /* ============================================================
    PAGE HERO TOP CLEARANCE (PREVENT COLLISION WITH FIXED HEADER)
    ============================================================ */

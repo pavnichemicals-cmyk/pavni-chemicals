@@ -113,6 +113,8 @@ ul, ol {
 .mb-sm { margin-bottom: 0.5rem; }
 .mb-md { margin-bottom: 1rem; }
 .mb-lg { margin-bottom: 2rem; }
+.mx-auto { margin-left: auto !important; margin-right: auto !important; }
+.my-auto { margin-top: auto !important; margin-bottom: auto !important; }
 
 /* ---- Overflow ---- */
 .overflow-hidden { overflow: hidden; }
