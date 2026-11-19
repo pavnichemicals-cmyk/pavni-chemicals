@@ -1,0 +1,47 @@
+
+/* ========== PRODUCT CARDS (Molecular Formula Layout) ========== */
+.product-card {
+    background: var(--navy-card);
+    border: 1px solid var(--navy-border);
+    transition: var(--trans);
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+.product-card:hover {
+    border-color: var(--teal);
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 212, 180, 0.1);
+}
+.product-visual {
+    height: 140px;
+    background: #0a1f3d;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid var(--navy-border);
+}
+.visual-overlay {
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(circle at center, transparent 0%, rgba(5,20,40,0.8) 100%);
+    opacity: 0.6;
+}
+.product-formula {
+    font-size: 2.75rem;
+    color: var(--teal);
+    font-weight: 800;
+    letter-spacing: 0.05em;
+    text-shadow: 0 0 20px rgba(0, 212, 180, 0.2);
+    font-family: var(--font-heading);
+    z-index: 2;
+}
+.product-formula sub {
+    font-size: 0.55em;
+    vertical-align: sub;
+    bottom: -0.2em;
+    opacity: 0.8;
+    margin-left: 1px;
+}

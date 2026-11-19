@@ -13,7 +13,7 @@
         var pctEl     = document.getElementById('load-pct');
         var statusTxt = document.getElementById('preloader-text');
         
-        if (!preloader) return;
+        if (!preloader || preloader.classList.contains('loaded')) return;
 
         var statusMessages = [
             'Analyzing Chemical Structures...',

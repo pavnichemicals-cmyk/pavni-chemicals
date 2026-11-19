@@ -1,0 +1,114 @@
+/* ===================================================
+   TYPOGRAPHY.CSS — Professional Industrial Scales
+   =================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700;800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@500&display=swap');
+
+:root {
+  --font-body:    'Inter', system-ui, -apple-system, sans-serif;
+  --font-display: 'Outfit', sans-serif;
+  --font-mono:    'JetBrains Mono', monospace;
+
+  /* Standardized Scales (Reduced) */
+  --fs-h1: clamp(2rem, 4vw, 3.2rem);
+  --fs-h2: clamp(1.6rem, 3vw, 2.2rem);
+  --fs-h3: clamp(1.15rem, 1.8vw, 1.35rem);
+  --fs-body: 0.92rem;
+  --fs-small: 0.82rem;
+  --fs-xs: 0.72rem;
+}
+
+body {
+  font-family: var(--font-body);
+  font-size: var(--fs-body);
+  color: var(--off-white);
+  line-height: 1.6;
+}
+
+/* ---- Headings ---- */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-display);
+  font-weight: 700;
+  color: var(--white);
+  line-height: 1.1;
+  letter-spacing: -0.01em;
+}
+
+h1 { font-size: var(--fs-h1); }
+h2 { font-size: var(--fs-h2); }
+h3 { font-size: var(--fs-h3); }
+h4 { font-size: 1.05rem; }
+h5 { font-size: 0.92rem; }
+h6 { font-size: 0.8rem; letter-spacing: 0.05em; }
+
+/* ---- Gradient Text ---- */
+.text-gradient {
+  background: linear-gradient(135deg, var(--teal) 0%, var(--blue) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* ---- Highlight accent ---- */
+.text-teal    { color: var(--teal); }
+.text-blue    { color: var(--blue); }
+.text-muted   { color: var(--text-muted); }
+.text-light   { color: var(--text-light); }
+.text-white   { color: var(--white); }
+.text-orange  { color: var(--cta-orange); }
+
+/* ---- Body text variants ---- */
+.lead {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: var(--text-light);
+}
+
+.body-sm { font-size: var(--fs-small); color: var(--text-muted); }
+.body-xs { font-size: var(--fs-xs); color: var(--text-muted); }
+
+.label-text {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--teal);
+}
+
+/* ---- Link styles ---- */
+.link {
+  color: var(--teal);
+  font-weight: 600;
+  transition: opacity 0.2s;
+}
+.link:hover { opacity: 0.75; }
+
+/* ---- Dividers ---- */
+.divider {
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--navy-border), transparent);
+  margin: 3rem 0;
+}
+
+/* ---- Inline highlight ---- */
+.highlight {
+  color: var(--teal);
+  font-weight: 700;
+}
+.highlight-orange {
+  color: var(--cta-orange);
+  font-weight: 700;
+}
+
+/* ---- Hero typography ---- */
+.hero-h1 {
+  font-size: clamp(2.5rem, 6vw, 4.2rem);
+  line-height: 1;
+  letter-spacing: -0.02em;
+}
+
+/* ---- SEO-optimized visible meta text ---- */
+.seo-keyword {
+  font-weight: 700;
+  color: var(--teal);
+}

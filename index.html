@@ -138,7 +138,6 @@
 </head>
 <body class="bg-dark" style="overflow: hidden;">
     <!-- Site Preloader -->
-    <!-- Site Preloader -->
     <div id="preloader" class="preloader">
         <div class="preloader-bg-pulse"></div>
         <div class="preloader-content">
@@ -157,6 +156,36 @@
             </div>
         </div>
     </div>
+    <script>
+        (function() {
+            var p = document.getElementById('preloader');
+            var prog = document.getElementById('load-progress');
+            var pct = document.getElementById('load-pct');
+            var txt = document.getElementById('preloader-text');
+            var count = 0;
+            var timer = setInterval(function() {
+                count += Math.floor(Math.random() * 25) + 15;
+                if (count >= 100) {
+                    count = 100;
+                    clearInterval(timer);
+                    if (txt) txt.textContent = 'Systems Initialized.';
+                    setTimeout(function() {
+                        if (p) p.classList.add('loaded');
+                        document.body.style.overflow = '';
+                    }, 350);
+                }
+                if (prog) prog.style.width = count + '%';
+                if (pct) pct.textContent = count + '%';
+            }, 60);
+            setTimeout(function() {
+                clearInterval(timer);
+                if (p && !p.classList.contains('loaded')) {
+                    p.classList.add('loaded');
+                    document.body.style.overflow = '';
+                }
+            }, 1800);
+        })();
+    </script>
 
     <!-- Header (Will be pulled from components, but for static delivery we inject here for now) -->
     <header id="site-header">
