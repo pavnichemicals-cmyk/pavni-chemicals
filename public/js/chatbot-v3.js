@@ -50,16 +50,16 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // 3. Conversational Chat Logic
     const qaDB = [
-        { keywords: ['quote', 'price', 'pricing', 'buy', 'cost'], answer: 'For accurate pricing and bulk quotations, please <a href="contact.html#quote" style="color:var(--teal); font-weight:bold; text-decoration:underline;">request a quote here</a> or call +91 96873 70005.' },
-        { keywords: ['partner', 'dealer', 'grasim', 'authorized', 'epigral'], answer: 'We are an Authorized Dealer for Aditya Birla Grasim Industries and Epigral Limited. We guarantee 100% genuine products. <a href="about.html" style="color:var(--teal); font-weight:bold; text-decoration:underline;">Read about us</a>.' },
+        { keywords: ['quote', 'price', 'pricing', 'buy', 'cost'], answer: 'For accurate pricing and bulk quotations, please <a href="contact#quote" style="color:var(--teal); font-weight:bold; text-decoration:underline;">request a quote here</a> or call +91 96873 70005.' },
+        { keywords: ['partner', 'dealer', 'grasim', 'authorized', 'epigral'], answer: 'We are an Authorized Dealer for Aditya Birla Grasim Industries and Epigral Limited. We guarantee 100% genuine products. <a href="about" style="color:var(--teal); font-weight:bold; text-decoration:underline;">Read about us</a>.' },
         { keywords: ['supplier', 'brand', 'manufacturers', 'nirma', 'reliance', 'tata', 'dcm', 'gacl', 'gnfc'], answer: 'Aside from Grasim, we distribute premium chemicals from top manufacturers including DCM, GACL, GNFC, Reliance, Epigral, GFL, Tata, Nirma, GHCL, DCW, Deepak Nitrite, and Deepak.' },
-        { keywords: ['experience', 'years', 'old', 'history'], answer: 'Pavni Chemicals has over 12+ years of uninterrupted supply experience in the chemical distribution industry. <a href="about.html" style="color:var(--teal); font-weight:bold; text-decoration:underline;">Learn more</a>.' },
-        { keywords: ['contact', 'phone', 'call', 'number', 'mobile'], answer: 'Reach our sales desk directly at +91 96873 70005, or <a href="contact.html" style="color:var(--teal); font-weight:bold; text-decoration:underline;">visit our Contact Page</a>.' },
-        { keywords: ['email', 'mail', 'id', 'address'], answer: 'For inquiries, quotes, or support, please email us at sales@pavnichemicals.com or <a href="contact.html" style="color:var(--teal); font-weight:bold; text-decoration:underline;">use our contact form</a>.' },
+        { keywords: ['experience', 'years', 'old', 'history'], answer: 'Pavni Chemicals has over 12+ years of uninterrupted supply experience in the chemical distribution industry. <a href="about" style="color:var(--teal); font-weight:bold; text-decoration:underline;">Learn more</a>.' },
+        { keywords: ['contact', 'phone', 'call', 'number', 'mobile'], answer: 'Reach our sales desk directly at +91 96873 70005, or <a href="contact" style="color:var(--teal); font-weight:bold; text-decoration:underline;">visit our Contact Page</a>.' },
+        { keywords: ['email', 'mail', 'id', 'address'], answer: 'For inquiries, quotes, or support, please email us at sales@pavnichemicals.com or <a href="contact" style="color:var(--teal); font-weight:bold; text-decoration:underline;">use our contact form</a>.' },
         { keywords: ['location', 'where', 'office', 'godown', 'factory'], answer: 'Our primary facility is located at: Godown No 1, Plot No 43, Shree Ram Estate, Ankleshwar, Gujarat – 393002. <a href="https://maps.app.goo.gl/aLiC9WwcdXXxN3w66" target="_blank" style="color:var(--teal); font-weight:bold; text-decoration:underline;">View on Map</a>.' },
         { keywords: ['delivery', 'fast', 'immediate', 'stock', 'inventory'], answer: 'We maintain a ready inventory of all 52 catalog products to ensure immediate dispatch and reliable supply chains for our industrial partners.' },
-        { keywords: ['product', 'list', 'catalog', 'items', 'chemicals'], answer: 'We offer a catalog of 52 premium chemicals across 5 categories. <a href="products.html" style="color:var(--teal); font-weight:bold; text-decoration:underline;">View Full Catalog</a>.' },
-        { keywords: ['use', 'application', 'industry', 'purpose'], answer: 'Our chemicals are widely used across Textiles, Pharmaceuticals, Water Treatment, Paper & Pulp, Agriculture, and Petrochemical industries. <a href="industries.html" style="color:var(--teal); font-weight:bold; text-decoration:underline;">See Industries Served</a>.' },
+        { keywords: ['product', 'list', 'catalog', 'items', 'chemicals'], answer: 'We offer a catalog of 52 premium chemicals across 5 categories. <a href="products" style="color:var(--teal); font-weight:bold; text-decoration:underline;">View Full Catalog</a>.' },
+        { keywords: ['use', 'application', 'industry', 'purpose'], answer: 'Our chemicals are widely used across Textiles, Pharmaceuticals, Water Treatment, Paper & Pulp, Agriculture, and Petrochemical industries. <a href="industries" style="color:var(--teal); font-weight:bold; text-decoration:underline;">See Industries Served</a>.' },
         { keywords: ['safety', 'precaution', 'handling', 'msds'], answer: 'Safety is paramount. We provide full MSDS for every product. Always use mandatory PPE and store chemicals in designated, ventilated areas.' },
         { keywords: ['gst', 'tax', 'registration'], answer: 'Our official GST registration number is: 24ABEFP4368B1ZG.' }
     ];
@@ -137,7 +137,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         <div style="font-size:0.75rem; color:var(--text-muted); margin-bottom:0.5rem;">
                             <strong>Application:</strong> ${(m.uses || []).slice(0, 2).join(', ')}...
                         </div>
-                        <a href="product-detail.html?id=${m.id}" style="font-size:0.75rem; color:var(--teal); text-decoration:none; display:inline-block; font-weight:700;">Full Spec & TDS →</a>
+                        <a href="product-detail?id=${m.id}" style="font-size:0.75rem; color:var(--teal); text-decoration:none; display:inline-block; font-weight:700;">Full Spec & TDS →</a>
                     `;
                     resultsContainer.appendChild(item);
                 });
@@ -149,7 +149,7 @@ document.addEventListener('DOMContentLoaded', () => {
             if (!hasBotResponse) {
                 const fallback = document.createElement('div');
                 fallback.className = 'chat-msg bot anim-fade-up';
-                fallback.innerHTML = `I couldn't find a direct answer for "${rawQuery}". You can try searching a chemical formula, or contact us at <a href="contact.html" style="color:var(--teal);">sales@pavnichemicals.com</a> for assistance.`;
+                fallback.innerHTML = `I couldn't find a direct answer for "${rawQuery}". You can try searching a chemical formula, or contact us at <a href="contact" style="color:var(--teal);">sales@pavnichemicals.com</a> for assistance.`;
                 content.appendChild(fallback);
             }
 

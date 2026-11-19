@@ -19,42 +19,27 @@
 </head>
 <body class="bg-dark">
 
-    <header id="site-header" class="scrolled">
-      <div class="top-utility-bar">
-        <div class="container top-bar-inner">
-          <div class="top-bar-left">
-            <span class="top-badge-partner"><span class="top-dot-pulse"></span> Authorized Channel Partner: Aditya Birla Grasim & Epigral Limited</span>
-            <span class="top-gst-badge">GSTIN: 24ABEFP4368B1ZG</span>
+    <!-- Header -->
+    <header id="site-header">
+      <div class="container">
+        <div class="header-inner">
+          <a href="/" class="logo-link" aria-label="Pavni Chemicals Home">
+            <img src="images/header-logo.svg" alt="Pavni Chemicals Logo" class="site-logo" />
+          </a>
+          <nav class="main-nav" aria-label="Main navigation">
+            <a href="/" class="nav-link">Home</a>
+            <a href="about" class="nav-link active">About Us</a>
+            <a href="products" class="nav-link">Products</a>
+            <a href="industries" class="nav-link">Industries</a>
+            <a href="contact" class="nav-link">Contact</a>
+          </nav>
+          <div class="header-ctas">
+            <a href="tel:+919687370005" class="btn btn-outline hide-mobile" id="header-call-btn">📞 +91 96873 70005</a>
+            <a href="contact#quote" class="btn btn-primary" id="header-quote-btn">Get a Quote</a>
           </div>
-          <div class="top-bar-right">
-            <span class="top-hub-link">📍 Gujarat Hubs: Ankleshwar • Dahej • Vadodara • Ahmedabad • Surat • Vapi</span>
-            <a href="tel:+919687370005" class="top-contact-link">📞 Sales: +91 96873 70005</a>
-            <a href="tel:+919998910115" class="top-contact-link">🚛 Fleet: +91 99989 10115</a>
-          </div>
-        </div>
-      </div>
-      <div class="header-main-bar">
-        <div class="container">
-          <div class="header-inner">
-            <a href="index.html" class="logo-link" aria-label="Pavni Chemicals Home">
-              <img src="images/header-logo.svg" alt="Pavni Chemicals Logo" class="site-logo" />
-            </a>
-            <nav class="main-nav" aria-label="Main navigation">
-              <a href="index.html" class="nav-link">Home</a>
-              <a href="about.html" class="nav-link active">About Us</a>
-              <a href="products.html" class="nav-link">50+ Chemicals</a>
-              <a href="industries.html" class="nav-link">Industries</a>
-              <a href="contact.html" class="nav-link">Contact</a>
-            </nav>
-            <div class="header-ctas hide-mobile">
-              <a href="docs/PAVNI CHEMICALS BROCHURE.pdf" download class="btn btn-outline" style="padding: 0.5rem 0.9rem; font-size: 0.8rem;">📥 Brochure</a>
-              <a href="https://wa.me/919687370005?text=Hello%20Pavni%20Chemicals" target="_blank" rel="noopener" class="btn btn-whatsapp" style="padding: 0.5rem 0.9rem; font-size: 0.8rem;">💬 WhatsApp</a>
-              <a href="contact.html#quote" class="btn btn-primary">Get a Quote</a>
-            </div>
-            <button class="hamburger" aria-label="Toggle menu" id="hamburger">
-              <span></span><span></span><span></span>
-            </button>
-          </div>
+          <button class="hamburger" id="hamburger" aria-label="Open mobile navigation">
+            <span></span><span></span><span></span>
+          </button>
         </div>
       </div>
     </header>
@@ -62,24 +47,24 @@
     <!-- Mobile Nav -->
     <nav class="mobile-nav" id="mobile-nav" aria-label="Mobile navigation">
       <button class="mobile-nav-close" id="mobile-close" aria-label="Close menu">&times;</button>
-      <a href="index.html"      class="nav-link">Home</a>
-      <a href="about.html"      class="nav-link active">About Us</a>
-      <a href="products.html"   class="nav-link">Products</a>
-      <a href="industries.html" class="nav-link">Industries</a>
-      <a href="contact.html"    class="nav-link">Contact</a>
+      <a href="/"      class="nav-link">Home</a>
+      <a href="about"      class="nav-link active">About Us</a>
+      <a href="products"   class="nav-link">Products</a>
+      <a href="industries" class="nav-link">Industries</a>
+      <a href="contact"    class="nav-link">Contact</a>
       <a href="tel:+919687370005" class="btn btn-outline mt-md">📞 Call Now</a>
-      <a href="contact.html#quote" class="btn btn-primary mt-sm">Get a Quote</a>
+      <a href="contact#quote" class="btn btn-primary mt-sm">Get a Quote</a>
     </nav>
 
     <main>
         <!-- Hero Section -->
-        <section class="section bg-hero" style="min-height: 400px; display: flex; align-items: center;">
+        <section class="hero-section page-hero bg-hero">
             <div class="container">
-                <div class="anim-fade-up">
-                    <span class="blink-authorized">Authorized Dealer — Grasim Industries & Epigral Limited</span>
-                    <h1 class="hero-title mt-md">A Legacy of <br><span class="text-gradient">Chemical Excellence.</span></h1>
-                    <p class="hero-subtitle mt-md">Supplying Gujarat's industrial backbone with high-purity chemicals since 2014.</p>
+                <div class="hero-eyebrow anim-fade-up">
+                    <span class="blink-authorized">Authorized Dealer - Aditya Birla Grasim & Epigral Limited</span>
                 </div>
+                <h1 class="hero-title anim-fade-up anim-delay-1">A Legacy of <br><span class="text-gradient">Chemical Excellence.</span></h1>
+                <p class="hero-subtitle anim-fade-up anim-delay-2">Supplying Gujarat's industrial backbone with high-purity chemicals and unbroken logistics since 2014.</p>
             </div>
         </section>
 
@@ -102,13 +87,46 @@
             </div>
         </section>
 
-        <!-- Exclusive Partner -->
-        <section class="section--sm bg-card">
+        <!-- Exclusive Partners -->
+        <section class="section--sm bg-card partners-section" style="padding: 4.5rem 0; border-top: 1px solid var(--navy-border); border-bottom: 1px solid var(--navy-border);">
             <div class="container text-center">
-                <h2 class="mb-lg">Authorized Partners</h2>
-                <div class="flex-center" style="display:flex; flex-wrap:wrap; gap:1.25rem; justify-content:center;">
-                    <span class="badge badge-teal" style="font-size: 1.15rem; padding: 1rem 2rem;">Aditya Birla Grasim Industries</span>
-                    <span class="badge badge-teal" style="font-size: 1.15rem; padding: 1rem 2rem;">Epigral Limited</span>
+                <div class="section-eyebrow mb-sm" style="display: inline-flex; align-items: center; gap: 0.5rem; margin-bottom: 1rem;">
+                    <span>Official Channel Distributorship</span>
+                </div>
+                <h2 class="section-title mb-sm" style="font-size: clamp(1.8rem, 3.2vw, 2.4rem);">Our Authorized <span class="text-gradient">Manufacturing Partners</span></h2>
+                <p class="text-light mx-auto mb-lg" style="max-width: 620px; font-size: 0.95rem; line-height: 1.6; margin-bottom: 2.75rem;">
+                    Direct manufacturer allocations ensuring 100% factory-sealed chemical authenticity, verified manufacturer COA certificates, and priority logistics dispatch.
+                </p>
+                <div class="partner-cards-wrap" style="display: flex; flex-wrap: wrap; justify-content: center; align-items: stretch; gap: 2rem; max-width: 860px; margin: 0 auto;">
+                    
+                    <!-- Partner Card: Aditya Birla Grasim -->
+                    <div class="partner-card anim-fade-up anim-delay-1" style="background: rgba(10, 25, 47, 0.75); border: 1px solid rgba(45, 212, 191, 0.25); border-radius: 16px; padding: 2.25rem 2rem; flex: 1 1 360px; max-width: 410px; display: flex; flex-direction: column; align-items: center; text-align: center; box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;" onmouseover="this.style.transform='translateY(-6px)'; this.style.borderColor='var(--teal)'; this.style.boxShadow='0 15px 35px rgba(45,212,191,0.2)';" onmouseout="this.style.transform='none'; this.style.borderColor='rgba(45,212,191,0.25)'; this.style.boxShadow='0 10px 30px rgba(0,0,0,0.4)';">
+                        <div class="partner-logo-box-square" style="width: 140px; height: 140px; aspect-ratio: 1 / 1; background: #ffffff; border-radius: 16px; padding: 8px; display: flex; align-items: center; justify-content: center; box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25); margin: 0 auto 1.5rem auto; border: 1px solid rgba(255, 255, 255, 0.2);">
+                            <img src="images/grasim-logo.png" alt="Aditya Birla Grasim Industries Limited" style="width: 100%; height: 100%; aspect-ratio: 1 / 1; object-fit: contain; border-radius: 8px;">
+                        </div>
+                        <h3 style="font-size: 1.25rem; font-weight: 700; color: #ffffff; margin-bottom: 0.5rem; letter-spacing: -0.01em;">Aditya Birla Grasim Industries</h3>
+                        <div style="display: inline-flex; align-items: center; gap: 0.4rem; font-size: 0.75rem; font-weight: 700; color: var(--teal); background: rgba(45, 212, 191, 0.12); border: 1px solid rgba(45, 212, 191, 0.35); border-radius: 9999px; padding: 0.3rem 0.85rem; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 1rem;">
+                            <span style="display: inline-block; width: 6px; height: 6px; background: var(--teal); border-radius: 50%;"></span> Authorized Dealer
+                        </div>
+                        <p style="font-size: 0.85rem; color: #cbd5e1; line-height: 1.55; margin: 0;">
+                            Premier distribution of <strong>Caustic Soda Lye, Caustic Soda Flakes, Hydrochloric Acid (HCl)</strong>, and <strong>Liquid Chlorine</strong> across Gujarat industrial belts.
+                        </p>
+                    </div>
+
+                    <!-- Partner Card: Epigral Limited -->
+                    <div class="partner-card anim-fade-up anim-delay-2" style="background: rgba(10, 25, 47, 0.75); border: 1px solid rgba(45, 212, 191, 0.25); border-radius: 16px; padding: 2.25rem 2rem; flex: 1 1 360px; max-width: 410px; display: flex; flex-direction: column; align-items: center; text-align: center; box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;" onmouseover="this.style.transform='translateY(-6px)'; this.style.borderColor='var(--teal)'; this.style.boxShadow='0 15px 35px rgba(45,212,191,0.2)';" onmouseout="this.style.transform='none'; this.style.borderColor='rgba(45,212,191,0.25)'; this.style.boxShadow='0 10px 30px rgba(0,0,0,0.4)';">
+                        <div class="partner-logo-box-square" style="width: 140px; height: 140px; aspect-ratio: 1 / 1; background: #ffffff; border-radius: 16px; padding: 12px; display: flex; align-items: center; justify-content: center; box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25); margin: 0 auto 1.5rem auto; border: 1px solid rgba(255, 255, 255, 0.2);">
+                            <img src="images/epigral-logo.png" alt="Epigral Limited" style="width: 100%; height: 100%; aspect-ratio: 1 / 1; object-fit: contain; border-radius: 8px;">
+                        </div>
+                        <h3 style="font-size: 1.25rem; font-weight: 700; color: #ffffff; margin-bottom: 0.5rem; letter-spacing: -0.01em;">Epigral Limited</h3>
+                        <div style="display: inline-flex; align-items: center; gap: 0.4rem; font-size: 0.75rem; font-weight: 700; color: var(--teal); background: rgba(45, 212, 191, 0.12); border: 1px solid rgba(45, 212, 191, 0.35); border-radius: 9999px; padding: 0.3rem 0.85rem; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 1rem;">
+                            <span style="display: inline-block; width: 6px; height: 6px; background: var(--teal); border-radius: 50%;"></span> Authorized Channel Partner
+                        </div>
+                        <p style="font-size: 0.85rem; color: #cbd5e1; line-height: 1.55; margin: 0;">
+                            Strategic supply of <strong>Hydrogen Peroxide (H2O2 50% &amp; 35%), Caustic Soda, Chloromethanes</strong>, and specialty chemical derivatives for manufacturing excellence.
+                        </p>
+                    </div>
+
                 </div>
             </div>
         </section>
@@ -119,7 +137,7 @@
           <div class="footer-grid">
             <!-- Brand -->
             <div class="anim-fade-up">
-              <a href="index.html" class="footer-logo-wrap">
+              <a href="/" class="footer-logo-wrap">
                 <img src="images/header-logo.svg" alt="Pavni Chemicals" class="footer-logo" />
               </a>
               <p class="text-muted mt-sm" style="max-width: 300px; font-size: 0.85rem; line-height: 1.6;">Your strategic partner for premium industrial chemicals and manufacturing excellence since 2014.</p>
@@ -129,10 +147,10 @@
             <div class="anim-fade-up anim-delay-1">
               <p class="footer-heading">Quick Links</p>
               <div class="footer-links">
-                <a href="about.html"      class="footer-link">About Us</a>
-                <a href="products.html"   class="footer-link">Product Catalog</a>
-                <a href="industries.html" class="footer-link">Industries Served</a>
-                <a href="contact.html"    class="footer-link">Request a Quote</a>
+                <a href="about"      class="footer-link">About Us</a>
+                <a href="products"   class="footer-link">Product Catalog</a>
+                <a href="industries" class="footer-link">Industries Served</a>
+                <a href="contact"    class="footer-link">Request a Quote</a>
               </div>
             </div>
       
@@ -187,7 +205,7 @@
                 <p style="font-size:0.8rem; color:var(--text-muted); margin:0;">Crafted by <span style="color:var(--teal); font-weight:700;">Veloora Creations</span></p>
                 <p class="footer-copy" style="margin:0;">&copy; 2014–<span id="current-year">2026</span> Pavni Chemicals. GST: 24ABEFP4368B1ZG</p>
             </div>
-            <p class="footer-tagline" style="margin:0;">Authorized Dealer — <span>Aditya Birla Grasim Industries & Epigral Limited</span></p>
+            <p class="footer-tagline" style="margin:0;">Authorized Dealer - <span>Aditya Birla Grasim Industries & Epigral Limited</span></p>
             <div style="margin:0;">
                 <a href="docs/PAVNI CHEMICALS BROCHURE.pdf" download style="color:var(--teal); font-size:0.8rem; text-decoration:none; font-weight:700; text-transform:uppercase; letter-spacing:0.1em; border-bottom: 1px solid var(--teal); padding-bottom:2px;">📥 Download Corporate Brochure</a>
             </div>

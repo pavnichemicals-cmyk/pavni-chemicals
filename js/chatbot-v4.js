@@ -60,25 +60,25 @@
         // ── 4. FAQ Knowledge Base ───────────────────────────────────────────────
         var qaDB = [
             { keywords: ['quote', 'price', 'pricing', 'buy', 'cost', 'rate'],
-              answer: 'For accurate pricing and bulk quotations, please <a href="contact.html#quote" style="color:var(--teal);font-weight:bold;text-decoration:underline;">request a quote here</a> or call +91 96873 70005.' },
+              answer: 'For accurate pricing and bulk quotations, please <a href="contact#quote" style="color:var(--teal);font-weight:bold;text-decoration:underline;">request a quote here</a> or call +91 96873 70005.' },
             { keywords: ['partner', 'dealer', 'grasim', 'authorized', 'aditya', 'birla', 'epigral'],
-              answer: 'We are an Authorized Dealer for Aditya Birla Grasim Industries and Epigral Limited. We guarantee 100% genuine products with manufacturer certification. <a href="about.html" style="color:var(--teal);font-weight:bold;text-decoration:underline;">Read about us</a>.' },
+              answer: 'We are an Authorized Dealer for Aditya Birla Grasim Industries and Epigral Limited. We guarantee 100% genuine products with manufacturer certification. <a href="about" style="color:var(--teal);font-weight:bold;text-decoration:underline;">Read about us</a>.' },
             { keywords: ['supplier', 'brand', 'manufacturer', 'nirma', 'reliance', 'tata', 'dcm', 'gacl', 'gnfc'],
               answer: 'We distribute premium chemicals from top manufacturers including Grasim, DCM, GACL, GNFC, Reliance, Epigral, GFL, Tata, Nirma, GHCL, DCW, Deepak Nitrite, and Deepak.' },
             { keywords: ['experience', 'years', 'history', 'since', 'established'],
-              answer: 'Pavni Chemicals has over 12+ years of uninterrupted supply experience in the chemical distribution industry. <a href="about.html" style="color:var(--teal);font-weight:bold;text-decoration:underline;">Learn more</a>.' },
+              answer: 'Pavni Chemicals has over 12+ years of uninterrupted supply experience in the chemical distribution industry. <a href="about" style="color:var(--teal);font-weight:bold;text-decoration:underline;">Learn more</a>.' },
             { keywords: ['contact', 'phone', 'call', 'number', 'mobile', 'reach'],
-              answer: '• Sales Desk: +91 96873 70005\n• Web: <a href="contact.html" style="color:var(--teal);font-weight:bold;">Contact Page</a>' },
+              answer: '• Sales Desk: +91 96873 70005\n• Web: <a href="contact" style="color:var(--teal);font-weight:bold;">Contact Page</a>' },
             { keywords: ['email', 'mail'],
-              answer: '• Inquiry: sales@pavnichemicals.com\n• Form: <a href="contact.html" style="color:var(--teal);font-weight:bold;">Contact Form</a>' },
+              answer: '• Inquiry: sales@pavnichemicals.com\n• Form: <a href="contact" style="color:var(--teal);font-weight:bold;">Contact Form</a>' },
             { keywords: ['location', 'where', 'office', 'godown', 'factory', 'address', 'ankleshwar'],
               answer: '• Address: Godown No 1, Plot No 43, Shree Ram Estate, Ankleshwar, Gujarat\n• Map: <a href="https://maps.app.goo.gl/aLiC9WwcdXXxN3w66" target="_blank" style="color:var(--teal);font-weight:bold;">View on Google Maps</a>' },
             { keywords: ['delivery', 'dispatch', 'stock', 'inventory', 'available', 'immediate'],
               answer: '• Ready Inventory: All 53 catalog products\n• Dispatch: Immediate dispatch capability\n• Supply: Reliable industrial chain' },
             { keywords: ['product', 'list', 'catalog', 'items', 'chemical', 'all'],
-              answer: '• Portfolio: 53+ Premium chemicals\n• View: <a href="products.html" style="color:var(--teal);font-weight:bold;">Full Catalog</a>' },
+              answer: '• Portfolio: 53+ Premium chemicals\n• View: <a href="products" style="color:var(--teal);font-weight:bold;">Full Catalog</a>' },
             { keywords: ['textile', 'pharma', 'water', 'paper', 'agriculture', 'petrochemical', 'industry', 'industries', 'application'],
-              answer: '• Sectors: Textiles, Pharma, Water Treatment\n• Other: Paper, Agriculture, Petrochemicals\n• Full List: <a href="industries.html" style="color:var(--teal);font-weight:bold;">Industries Served</a>' },
+              answer: '• Sectors: Textiles, Pharma, Water Treatment\n• Other: Paper, Agriculture, Petrochemicals\n• Full List: <a href="industries" style="color:var(--teal);font-weight:bold;">Industries Served</a>' },
             { keywords: ['safety', 'precaution', 'handling', 'msds', 'sds', 'hazard'],
               answer: '• Document: Full MSDS/SDS provided\n• Requirement: Mandatory PPE usage\n• Storage: Designated ventilated areas' },
             { keywords: ['gst', 'tax', 'registration', 'gstin'],
@@ -151,7 +151,7 @@
                             '<span style="color:var(--teal);font-size:0.75rem;font-weight:700;">' + (m.formula || '').replace(/<[^>]*>/g,'') + '</span>' +
                             '</div>' +
                             '<div style="font-size:0.73rem;color:var(--text-muted);margin-bottom:0.4rem;">' + (m.uses||[]).slice(0,2).join(', ') + '</div>' +
-                            '<a href="product-detail.html?id=' + m.id + '" style="font-size:0.73rem;color:var(--teal);text-decoration:none;font-weight:700;">Full Spec & MSDS →</a>' +
+                            '<a href="product-detail?id=' + m.id + '" style="font-size:0.73rem;color:var(--teal);text-decoration:none;font-weight:700;">Full Spec & MSDS →</a>' +
                             '</div>';
                     });
                     var box = document.createElement('div');
@@ -181,7 +181,7 @@
                         if (data.response) {
                             addMessage(data.response, 'bot');
                         } else {
-                            addMessage('I\'m having trouble connecting to my AI brain. Please try again later or contact us at <a href="contact.html" style="color:var(--teal);">sales@pavnichemicals.com</a>.', 'bot');
+                            addMessage('I\'m having trouble connecting to my AI brain. Please try again later or contact us at <a href="contact" style="color:var(--teal);">sales@pavnichemicals.com</a>.', 'bot');
                         }
                     })
                     .catch(err => {

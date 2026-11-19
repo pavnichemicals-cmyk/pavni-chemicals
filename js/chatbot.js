@@ -112,7 +112,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     <div style="font-size:0.7rem; color:#ffb347; margin-bottom:0.75rem;">
                         <strong>⚠️ Safety:</strong> ${m.precautions || 'Handle as per MSDS guidelines.'}
                     </div>
-                    <a href="product-detail.html?id=${m.id}" class="action-link" style="font-size:0.75rem; color:var(--teal); text-decoration:none; display:inline-block; font-weight:700;">Full Spec & TDS →</a>
+                    <a href="product-detail?id=${m.id}" class="action-link" style="font-size:0.75rem; color:var(--teal); text-decoration:none; display:inline-block; font-weight:700;">Full Spec & TDS →</a>
                 `;
                 resultsContainer.appendChild(item);
             });
