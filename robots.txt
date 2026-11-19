@@ -1,4 +1,5 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://pavnichemicals.com/sitemap.xml
+# Canonical XML Sitemap for Pavni Chemicals
+Sitemap: https://www.pavnichemicals.com/sitemap.xml
